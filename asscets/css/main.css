@@ -1,0 +1,791 @@
+.row.mt-42.mb-50 {
+    flex-direction: row-reverse;
+}
+
+.dau_trang {
+    padding: 30px 15px;
+}
+
+.dau_trang__nav {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dau_trang__menu:hover {
+    cursor: pointer;
+}
+
+.dau_trang__menu-icon {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.dau_trang__menu-icon span {
+    text-align: left;
+    display: block;
+    width: 23px;
+    height: 2px;
+    background: #343434;
+    margin-bottom: 4px;
+}
+
+.dau_trang__menu-icon span:nth-child(2) {
+    width: 12px;
+}
+
+.dau_trang__menu-icon span:nth-child(3) {
+    width: 17px;
+}
+
+.dau_trang__menu-title {
+    letter-spacing: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 7px;
+    font-family: 'Jost';
+    text-transform: uppercase;
+    filter: opacity(90%);
+}
+
+
+.dau_trang__logo-img {
+    height: 54px;
+    width: 155px;
+}
+
+.dau_trang__logo-link {
+    text-decoration: none;
+    color: transparent;
+}
+
+.dau_trang__tools {
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.dau_trang__tools svg {
+    height: 24px;
+    width: 24px;
+    margin-left: 16px;
+}
+
+.dau_trang__search svg {
+    margin: 0;
+}
+
+.dau_trang__tools svg:hover {
+    cursor: pointer;
+}
+
+.noi_dung__slider {
+    position: relative;
+}
+
+.noi_dung__slider-link {
+    text-decoration: none;
+    color: transparent;
+    padding-top: 50%;
+    background: url('/asscets/img/slide2.jpg') top center / cover no-repeat;
+    display: block;
+}
+
+.noi_dung__slider-item {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translate(0, -50%);
+}
+
+.noi_dung__slider-title-pr {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+.noi_dung__slider-product-name {
+    text-transform: capitalize;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.noi_dung__product-describe p {
+    color: var(--black-color);
+    filter: opacity(80%);
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 2.2rem;
+    margin-bottom: 32px;
+}
+
+.noi_dung__slider-btn {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 13px 35px;
+    text-decoration: none;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    border: none;
+    transition: all .3s;
+}
+
+.noi_dung__slider-btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.noi_dung__slider-list {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    bottom: 2%;
+    right: 47%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.noi_dung__slider-list-item {
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    width: 13px;
+    height: 13px;
+}
+
+.noi_dung__slider-list-item:first-child {
+    margin-right: 8px;
+}
+
+.noi_dung__product-heading {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.noi_dung__product-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.noi_dung__product-title::before {
+    content: "";
+    width: 7%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    right: 43%;
+    top: 32px;
+    transform: translateX(-50%);
+}
+
+.noi_dung__product-filter {
+    margin: 42px 0 62px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.noi_dung__product-filter-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 44px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: all .3s;
+    margin-right: 12px;
+}
+
+.noi_dung__product-filter-btn:last-child {
+    margin-right: 0;
+}
+
+.noi_dung__product-filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.noi_dung__list-product-warp {
+    padding: 0 15px 0 0;
+    text-align: center;
+}
+
+.noi_dung__list-product {
+    display: block;
+}
+
+.noi_dung__list-product-img {
+    position: relative;
+}
+
+.noi_dung__list-product-img:hover .noi_dung__list-product-control {
+    display: flex;
+}
+
+.noi_dung__list-product-link-img {
+    width: 100%;
+}
+
+.noi_dung__list-product-control {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-45%, 0);
+    padding: 0;
+}
+
+.noi_dung__list-product-control-item {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin-right: 20px;
+    position: relative;
+}
+
+.noi_dung__list-product-control-item:hover::before {
+    display: block;
+}
+
+.noi_dung__list-product-control-item:hover::after {
+    display: block;
+}
+
+.noi_dung__list-product-control-item:nth-child(2):hover::after {
+    display: block;
+}
+
+.noi_dung__list-product-control-item:nth-child(3):hover::after {
+    display: block;
+}
+
+.noi_dung__list-product-control-item::before {
+    content: "";
+    position: absolute;
+    top: -23%;
+    right: 33%;
+    border-width: 10px 8px;
+    border-style: solid;
+    border-color: var(--black-color) transparent transparent transparent;
+    display: none;
+}
+
+.noi_dung__list-product-control-item::after {
+    content: "Add to Cart";
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: var(--black-color);
+    top: -85%;
+    right: -43%;
+    display: none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.noi_dung__list-product-control-item:nth-child(2)::after {
+    content: "Quickview";
+    position: absolute;
+    width: 88px;
+    height: 30px;
+    font-size: 1.4rem;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: var(--black-color);
+    top: -85%;
+    right: -43%;
+    display: none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.noi_dung__list-product-control-item:nth-child(3)::after {
+    content: "Add to Wishlist";
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 30px;
+    border-radius: 3px;
+    background-color: var(--black-color);
+    top: -85%;
+    right: -66%;
+    display: none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.noi_dung__list-product-control-item svg {
+    width: 20px;
+    height: 20px;
+}
+
+.noi_dung__list-product-control-item:hover {
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.noi_dung__list-product-control-item:hover svg {
+    fill: var(--white-color);
+    color: var(--white-color);
+}
+
+.noi_dung__list-product-name {
+    display: block;
+    padding: 20px 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Jost';
+}
+
+.noi_dung__list-product-name:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.noi_dung__list-product-price-old {
+    font-size: 1.4rem;
+    font-family: 'Jost';
+    font-weight: 700;
+    text-decoration: line-through;
+    color: #a09797;
+    margin-right: 4px;
+}
+
+.noi_dung__list-product-price-sale {
+    font-size: 1.4rem;
+    font-family: 'Jost';
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.noi_dung__product-pr {
+    margin-top: 74px;
+}
+
+.noi_dung__product-pr-link {
+    display: block;
+}
+
+.noi_dung__product-pr-img-warp {
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.noi_dung__product-pr-img-warp:hover img {
+    transform: scale(1.04);
+    transition: all .8s linear;
+}
+
+.noi_dung__product-pr-function {
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: translate(0, -50%);
+    text-align: left;
+}
+
+.noi_dung__product-pr-function-2 {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    transform: translate(0, -50%);
+    text-align: right;
+}
+
+.noi_dung__product-pr-name {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Jost';
+    color: var(--black-color);
+}
+
+.noi_dung__product-pr-function-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.noi_dung__product-pr-btn .noi_dung__slider-btn {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 3px;
+    width: 142px;
+    height: 44px;
+}
+
+.noi_dung__product-pr-btn .noi_dung__slider-btn:hover {
+    background-color: var(--black-color);
+}
+
+.noi_dung__product-best {
+    text-align: center;
+}
+
+.separation-blog {
+    width: 64px;
+    position: absolute;
+    right: 45%;
+    transform: translateX(-50%);
+}
+
+.noi_dung__product-blog-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.noi_dung__product-blog-name {
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'Jost';
+    color: var(--black-color);
+}
+
+.noi_dung__product-blog-name:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.noi_dung__product-blog-describe {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    font-family: 'Jost';
+    color: var(--black-color);
+    filter: opacity(70%);
+}
+
+.btn-readmore {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+.btn-readmore:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.noi_dung__product-blog-img {
+    transition: all .3s ease-in;
+}
+
+.noi_dung__product-blog-img:hover {
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+
+.chan_trang {
+    background-color: #f9f9f9;
+}
+
+.chan_trang-slogan {
+    font-size: 1.4rem;
+    font-family: 'Jost';
+}
+
+.chan_trang-icon {
+    font-size: 1.4rem;
+}
+
+.chan_trang-icon i:first-child {
+    padding: 0 24px 0 8px;
+}
+
+.chan_trang-icon i:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+i+i {
+    padding-right: 24px;
+}
+
+.chan_trang-menu-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Jost';
+    margin-bottom: 60px;
+    display: block;
+    position: relative;
+}
+
+.chan_trang-menu-title::after {
+    content: "";
+    background-color: var(--black-color);
+    height: 1px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: calc(100% + 30px);
+}
+
+.chan_trang-menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chan_trang-menu-list-item .chan_trang-menu-list-item-link:hover {
+    color: var(--primary-color);
+}
+
+.chan_trang-menu-list-item-link {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Jost';
+    color: var(--black-color);
+    text-decoration: none;
+    filter: opacity(95%);
+    display: block;
+    margin-top: 16px;
+}
+
+.chan_trang-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 78px;
+}
+
+.chan_trang-copyright-text {
+    font-size: 1.4rem;
+    font-family: 'Jost';
+}
+
+.chan_trang-copyright-text p {
+    display: inline;
+}
+
+
+.chan_trang-copyright-text-link {
+    color: #6C6C6C;
+}
+
+.chan_trang-copyright-text-link:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.chan_trang-copyright-text-link:hover::after {
+    width: 74px;
+}
+
+.chan_trang-copyright-text-link::after {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    left: 202px;
+    bottom: 28px;
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #59b43e;
+    -webkit-transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+    transition: all .3s cubic-bezier(.175,.885,.32,1.075);
+}
+
+.chan_trang-copyright-text-policy:hover {
+    opacity: .8;
+}
+
+.border-copyright {
+    border-top: 1px solid #dcdcdc;
+}
+
+.to__top {
+    --height: 45px;
+    width: 45px;
+    height: var(--height);
+    border-radius: 50%;
+    position: fixed;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    right: 36px;
+    bottom: 100px;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: calc(var(--height) - -5px);
+    box-shadow: 0 0 10px #0000001a;
+    transition: all .4s ease 0s;
+    display: none;
+}
+
+.to__top:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.to__top:before {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, #fff0, #ffffff4d);
+    -webkit-transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+    -ms-transform: skewX(-45deg);
+    transform: skew(-45deg);
+}
+
+.to__top:hover:before {
+    animation: shine .75s;
+    -webkit-animation: shine .75s;
+}
+
+@media only screen and (max-width: 500px) {
+    .dau_trang__menu-title {
+        display: none;
+    }
+
+    .dau_trang__account {
+        display: none;
+    }
+
+    .dau_trang__product-like {
+        display: none;
+    }
+
+    .noi_dung__slider-link {
+        padding-top: 100%;
+    }
+
+    .noi_dung__slider-item {
+        left: 8%;
+    }
+
+    .noi_dung__slider-title-pr {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .noi_dung__slider-product-name {
+        font-size: 3.2rem;
+    }
+
+    .noi_dung__product-describe {
+        font-size: 1.5rem;
+    }
+
+    .noi_dung__slider-btn {
+        padding: 12px 20px;
+    }
+
+    .noi_dung__slider-list {
+        bottom: 3%;
+        right: 40%;
+    }
+
+    .noi_dung__product-title::before {
+        width: 20%;
+        right: 30%;
+    }
+
+    .noi_dung__product-filter a:nth-child(3) {
+        margin-top: 10px;
+    }
+
+    .noi_dung__product-pr-name {
+        font-size: 2.9rem;
+    }
+
+    .noi_dung__product-pr-function {
+        top: 38%;
+    }
+
+    .noi_dung__slider-btn {
+        text-align: center;
+    }
+
+    .noi_dung__product-pr-function-2 {
+        top: 38%;
+    }
+
+    .noi_dung__product-blog-info {
+        position: relative;
+    }
+    .row.pr-l-15.pt-b-50 .col-3 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .chan_trang-menu {
+        text-align: center;
+    }
+
+    .chan_trang-menu-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .chan_trang-copyright {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .chan_trang-copyright-text {
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    .dau_trang__cart  {
+        position: relative;
+    }
+
+    .dau_trang__cart::before {
+        content: "0";
+        --height: 15px;
+        position: absolute;
+        top: -12px;
+        right: -5px;
+        width: 15px;
+        height: var(--height);
+        line-height: var(--height);
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: "Jost";
+        color: var(--primary-color);
+        background-color: var(--white-color);
+        border-radius: 50%;
+    }
+}

@@ -89,8 +89,6 @@
 .noi_dung__slider-link {
     text-decoration: none;
     color: transparent;
-    padding-top: 50%;
-    background: url('/asscets/img/slide2.jpg') top center / cover no-repeat;
     display: block;
 }
 
